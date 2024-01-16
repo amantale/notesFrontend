@@ -1,0 +1,168 @@
+body {
+    background-color: #7FC7D9; /* Light blue background color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.App {
+    max-width: 800px;
+    margin: 50px auto 0; /* Added 50px margin at the top */
+    border-top: 50px solid transparent; /* Added 50px border at the top */
+}
+
+header {
+    background-color: #745dc7;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav h1, nav h2 {
+    margin: 0;
+    color: black; /* Black color */
+    font-size: 24px;
+    font-weight: bold; /* Bold text */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #6a0572;
+}
+
+h1 {
+    color: black; /* Black color */
+    margin-bottom: 25px; /* Adjusted margin to 25px */
+    border-bottom: 25px solid transparent; /* Adjusted border to 25px */
+}
+
+h2 {
+    color: black; /* Black color */
+    margin-top: 25px; /* Added margin at the top */
+    border-top: 25px solid transparent; /* Added border at the top */
+}
+
+/* Apply a lighter blue gradient to the ul background */
+ul {
+    list-style-type: none;
+    padding: 0;
+    background: linear-gradient(to right, #87cefa, #add8e6); /* Light blue gradient */
+    border-radius: 8px;
+    font-size: 18px; /* Bigger font size */
+    color: black; /* Black color */
+    font-weight: bold; /* Bold text */
+}
+
+ul li {
+    margin-bottom: 10px; /* Added margin between list items */
+    color: black; /* Black color */
+    font-weight: bold; /* Bold text */
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: black; /* Black color */
+    font-weight: bold; /* Bold text */
+}
+
+li button {
+    background-color: #2db336;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+li button:hover {
+    background-color: #4b0345;
+}
+
+/* Additional Style for CreateNote Component */
+label[for="noteContent"] {
+    color: #000000; /* Black color */
+    font-weight: bold; /* Bold text */
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 50px; /* Added margin */
+    border-radius: 4px;
+}
+
+/* Align label, input, and button in CreateNote Component */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+label[for="noteContent"] {
+    flex: 1; /* Take up available space */
+}
+
+input {
+    flex: 2; /* Take up twice as much space as label */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 50px; /* Added margin */
+}
+
+button,
+li button {
+    background-color: #2db336;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover,
+li button:hover {
+    background-color: #4b0345;
+}
+
+/* Make text in li inside List notes white */
+ul li {
+    color: black;
+}
+
+/* Make specified texts red and green */
+p {
+    margin: 0; /* Remove default margin for p elements */
+}
+
+p.error {
+    color: red;
+}
+
+p.success {
+    color: green;
+}
