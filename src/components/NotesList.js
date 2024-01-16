@@ -34,7 +34,7 @@ const NotesList = () => {
 
   return (
     <div>
-      <h2>Notes List</h2>
+      <h2 data-testid='header-notes-list'>Notes List</h2>
       {fetchError && <p>{fetchError}</p>}
       <ul>
         {notes.length === 0 && !fetchError && <p>There were no notes found</p>}
