@@ -1,5 +1,6 @@
+// NotesList.mjs
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+const { default: axios } = require('axios');
 
 const NotesList = () => {
   const [notes, setNotes] = useState([]);
